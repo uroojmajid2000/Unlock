@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700;800;900&family=Yuji+Boku&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+header {
+  max-width: 100%;
+  margin: 0 auto;
+  width: 100%;
+  height: 5rem;
+  font-weight: 300;
+  background-color: rgb(70, 44, 148);
+}
+.header-width {
+  max-width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+nav {
+  display: flex;
+  gap: 2rem;
+}
+header nav .menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  border-right: 1px solid grey;
+  padding-right: 2rem;
+  font-size: 1.2rem;
+}
+header nav .menu li a {
+  color: #afafaf;
+  transition: ease 0.6s;
+}
+header nav .menu li a:hover {
+  color: #fbfbfb;
+}
+.logo a {
+  color: white;
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+header nav .authentication {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  gap: 2rem;
+}
+header nav .authentication li a {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.hero {
+  background-image: url(images/cover_bg.svg);
+  width: 100%;
+  height: 88.7vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero .hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 88.7vh;
+}
+.hero .hero-content h1 {
+  font-size: 4.375rem;
+  font-weight: 300;
+  color: white;
+}
+.hero .hero-content p {
+  font-size: 1.5rem;
+  color: #afafaf;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+.hero-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1.5rem;
+}
+.hero-btn1 {
+  background-color: #29cc9f;
+  color: white;
+  border-radius: 40px;
+  padding: 1.5rem 3rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-weight: 400;
+  transition: ease 0.4s;
+}
+.hero-btn1:hover {
+  background-color: #4bdcb3;
+}
+.hero-btn2 {
+  background-color: none;
+  color: white;
+  border-radius: 40px;
+  padding: 1.5rem 3rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-weight: 400;
+  transition: ease 0.4s;
+  border: solid 1px white;
+}
+.hero-btn2:hover {
+  background-color: white;
+  color: black;
+}
+.template {
+  max-width: 70rem;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.template .template-content {
+  width: 35rem;
+}
+.template .template-content h2 {
+  font-size: 2.3rem;
+  font-weight: 300;
+  line-height: 6rem;
+}
+.template .template-content h3 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 3rem;
+}
+.template .template-content p {
+  color: #959090;
+  font-weight: 300;
+  line-height: 1.7rem;
+}
+.template .template-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 35rem;
+}
+.template-gallery-img {
+  overflow: hidden;
+  width: 17rem;
+  height: 17rem;
+  position: relative;
+}
+.template .template-gallery .template-gallery-img img {
+  height: 17rem;
+  width: 17rem;
+  transform: scale(1.6, 1.6);
+  transition: ease 0.6s;
+}
+.template .template-gallery .template-gallery-img:hover img {
+  transform: scale(1, 1);
+}
+.template-gallery-hover {
+  display: none;
+  height: 17rem;
+  width: 17rem;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.template
+  .template-gallery
+  .template-gallery-img:hover
+  .template-gallery-hover {
+  display: flex;
+}
+.mobile-template {
+  display: flex;
+  background-image: url(images/cover_bg.svg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.mobile-template-width {
+  max-width: 75rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.mobile {
+  flex: 1;
+}
+
+.mobile img {
+  height: 40rem;
+  width: 25rem;
+  margin-top: 10rem;
+}
+.mobile-template-content {
+  flex: 1;
+}
+
+.mobile-template-content h2 {
+  font-size: 2.3rem;
+  font-weight: 300;
+  line-height: 4rem;
+  color: white;
+}
+.mobile-template-content h3 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 4rem;
+  color: white;
+}
+
+.mobile-template-content p {
+  color: #b4b1b1;
+  font-weight: 300;
+  line-height: 1.7rem;
+}
+
+.services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 70rem;
+  margin: 0 auto;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  column-gap: 1rem;
+}
+.services-content {
+  display: flex;
+  column-gap: 1.3rem;
+  justify-content: center;
+}
+.icon i {
+  font-size: 3rem;
+  color: #29cc9f;
+}
+.icon-content h3 {
+  font-weight: 300;
+}
+.icon-content p {
+  font-weight: 300;
+  color: #7c7b7b;
+  max-width: 19rem;
+}
+footer {
+  background-color:black;
+  color:white;
+  padding-top: 10rem;
+  padding-bottom: 7rem;
+  
+}
+.footer-width{
+  display: flex;
+  justify-content: space-around;
+max-width: 75rem;
+margin: 0 auto;
+}
+.f1 h1{
+  font-size: 1.5rem;
+  font-weight: 300;
+  transition: ease .5s;
+}
+.f1 h1:hover{
+  color: #4bdcb3;
+  font-size: 1.5rem;
+  font-weight: 300;
+  cursor: pointer;
+}
+.f2 h6{
+  color: #ccc8c8;
+  font-size: 1.1rem;
+  font-weight: 200;
+  line-height: 3rem;
+
+}
+.f2 ul li{
+  text-decoration: none;
+  list-style: none;
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 2rem;
+  transition: ease .5s;
+
+}
+.f2 ul li:hover{
+ color: #4bdcb3;
+ cursor: pointer;
+
+}
+.f5 i{
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  background-color: #1a1a1a;
+  border-radius: 100%;
+  transition: ease .5s;
+  
+}
+.f5 i:hover{
+  color: #4bdcb3;
+  cursor: pointer;
+ 
+ }
+ .footer-privacy {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-top: 5rem;
+   max-width: 67rem;
+   margin: 0 auto;
+
+ }
+ .footer-privacy ul{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   list-style: none;
+   column-gap: 1rem; 
+   
+ }
+ .footer-privacy ul li{
+
+  color: #b4b1b1;
+  font-weight: 300;
+  
+}
+.footer-privacy ul li:hover{
+  color: #4bdcb3;
+  cursor: pointer;
+ 
+ }
+
+ .footer-privacy p{
+   max-width: 30rem;
+   text-align: right;
+   color: #b4b1b1;
+  font-weight: 300;
+ }
+ 
